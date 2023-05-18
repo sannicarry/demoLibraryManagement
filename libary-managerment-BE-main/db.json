@@ -1,0 +1,64 @@
+{
+  "books": [
+    {
+      "book_id": 1,
+      "book_name": "Giáo trình Lịch sử tôn giáo thế giới",
+      "genre_id": "LS",
+      "author": "Đặng Văn Chương",
+      "publication": "Nxb. Đại học Huế, 2020",
+      "quantity": 10,
+      "page_book": 100,
+      "id": 1
+  },
+  {
+      "book_id": 2,
+      "book_name": "Từ ngữ chỉ màu sắc trong tiếng Pa Cô",
+      "genre_id": "NV",
+      "author": "Trương Thị Cúc",
+      "publication": "Nxb. Trường Đại học Khoa học, 2022",
+      "quantity": 3,
+      "page_book": 150,
+      "id": 2
+  },
+  {
+      "book_id": 3,
+      "book_name": "Giáo trình Lập trình nâng cao với C/C++",
+      "genre_id": "CNTT",
+      "author": "Trương Công Tuấn",
+      "publication": "Nxb. Đại học Huế, 2021",
+      "quantity": 15,
+      "page_book": 200,
+      "id": 3
+  },
+  {
+      "book_id": 4,
+      "book_name": "Giáo trình lập trình hướng đối tượng",
+      "genre_id": "CNTT",
+      "author": "Trương Công Tuấn",
+      "publication": "Nxb. Trường Đại học Khoa học, 2018",
+      "quantity": 4,
+      "page_book": 150,
+      "id": 4
+  },
+  {
+      "book_id": 5,
+      "book_name": "Cấu trúc dữ liệu và giải thuật",
+      "genre_id": "CNTT",
+      "author": "Đỗ Xuân Lôi",
+      "publication": "Nxb. Giáo dục, 1993",
+      "quantity": 20,
+      "page_book": 180,
+      "id": 5
+  },
+  {
+      "book_id": 6,
+      "book_name": "Cơ sở công nghệ phần mềm",
+      "genre_id": "CNTT",
+      "author": "Lương Mạnh Bá",
+      "publication": "Nxb. Khoa học và Kỹ thuật, 2010",
+      "quantity": 1,
+      "page_book": 200,
+      "id": 6
+  }
+  ]
+}

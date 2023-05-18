@@ -1,0 +1,460 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.active {
+    background-color: #d46a14 !important;
+}
+
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #003C6C;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+#client-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.header .item-2 {
+    flex: 1;
+    position: relative;
+    display: flex;
+}
+
+.header .item-2 .img-school {
+    height: 350px;
+    width: 80%;
+    flex: 1;
+}
+
+.header .item-2 .form-logout {
+    display: flex;
+    position: absolute;
+    width: 20%;
+    height: 160px;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#logout {
+   position: absolute;
+   width: 20%;
+   height: 50px;
+   top: 0 ;
+   right: 0;
+   /* width: 100%;
+   height: 100%; */
+   background-color: #804874;
+   font-size: 30px;
+   color: #fff;
+   font-weight: 700;
+   border-radius: 5px;
+   border: 1px solid #9889ee;
+}
+
+#logout:hover {
+    border: 3px solid #1dbfaf;
+    cursor: pointer;
+}
+
+
+.header .itemList {
+    flex: 1;
+    background-color: #1dbfaf;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .itemList button{
+    width: 15%;
+    height: 50px;
+    background-color: #804874;
+    border: 1px solid #9889ee;
+    border-radius: 5px;
+}
+
+.header .itemList button:hover {
+    border: 3px solid #ccc;
+    cursor: pointer;
+}
+
+.header .itemList p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header .itemList .borrow {
+    background-color: #ccc;
+}
+
+.header .itemList .return {
+    background-color: #ccc;
+}
+
+.header .itemList .renewing {
+    background-color: #ccc;
+}
+
+.header .itemList .resolve-issue {
+    background-color: #ccc;
+}
+
+.content {
+    flex: 1;
+    position: relative;
+}
+
+.content .img-library {
+    height: 350px;
+    width: 100%;
+}
+
+.content .list-book {
+    height: 100%;
+}
+
+.list-book {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-list-book {
+    flex: 1;
+    display: flex;
+}
+
+.header-list-book .search-book {
+    flex: 3;
+}
+
+.header-list-book .search-book .input-search{
+    display: flex;
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+.search-book .input-search .search-title {
+    flex: 1;
+    border: 2px solid #181717;
+    border-radius: 10px;
+    margin: 0 4px;
+}
+
+.search-book .input-search input {
+    flex: 1;
+    border: 2px solid #181717;
+    border-radius: 10px;
+    margin: 0 4px;
+}
+
+.header-list-book .search-book p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 12px 24px;
+}
+
+.header-list-book .wrap-add-book {
+    flex: 1;
+    /* background: #000; */
+    display: flex;
+    /* align-self: center; */
+    /* align-self: flex-end !important;  */
+    /* margin-bottom: 12px !important;
+    margin-top: 12px;
+    margin-left: 4px; */
+    Justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header-list-book .wrap-add-book .add-book {
+    height: 40px;
+    width: 80%;
+    border: 2px solid #181717;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.header-list-book .wrap-add-book .add-book:hover {
+    cursor: pointer;
+    border: 3px solid #1dbfaf;
+}
+
+.header-list-book .wrap-add-book .add-book p {
+    color: #000;
+    font-size: 20px;
+}
+
+.content-list-book {
+    flex: 1;
+    background: #000;
+    
+}
+
+.content-list-book .property-book {
+    display: flex;
+}
+
+.content-list-book .property-book div {
+    color: #fff;
+    font-size: 20px;
+    border-right: #003C6C solid;
+    border-bottom: #003C6C solid;
+    flex: 1;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-list-book .list-content-book{
+    display: flex;
+}
+
+.content-list-book .list-content-book.hidden{
+    display: none;
+}
+
+.content-list-book .list-content-book div{
+    color: #fff;
+    font-size: 20px;
+    border-right: #003C6C solid;
+    border-bottom: #003C6C solid;
+    flex: 1;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-list-book .list-content-book div p {
+    min-width: 40px;
+    min-height: 20px;
+    /* overflow-wrap: break-word; */
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    
+}
+
+.content-list-book .list-content-book div button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0;
+    border-bottom: #003C6C solid;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.content-list-book .list-content-book div button:hover {
+    border: 3px solid #1dbfaf;
+    cursor: pointer;
+}
+
+.content-list-book .list-content-book .btn-delete-book {
+    border: 3px solid #1dbfaf;
+    font-size: 50px;
+    width: 40%;
+}
+
+.content-list-book .list-content-book .btn-borrow-book {
+    border: 3px solid #1dbfaf;
+    font-size: 30px;
+    width: 40%;
+    height: 50px;
+}
+
+.content-list-book .list-content-book .btn-delete-book, .btn-borrow-book:hover {
+    opacity: 0.8;
+}
+
+.content .element-add-book {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    width: 80%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 5px solid #ccc;
+}
+
+.content .element-add-book i {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4px;
+    border: 5px solid #8d148d;
+    opacity: 0.8;
+}
+
+.content .element-add-book i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.content .element-add-book p {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 4px;
+}
+
+.content .element-add-book input {
+    height: 50px;
+    width: 30%;
+    margin: 4px 4px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.content .element-add-book div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .element-add-book .title .book-title {
+    width: 60.5%;
+}
+
+.content .element-add-book button {
+    width: 30%;
+    height: 10%;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+.content .element-add-book button:hover {
+    border: 3px solid #1dbfaf;
+    cursor: pointer;
+}
+/* oke */
+.content .element-borrow-book {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    width: 80%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 5px solid #ccc;
+}
+
+.content .element-borrow-book i {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4px;
+    border: 5px solid #8d148d;
+    opacity: 0.8;
+}
+
+.content .element-borrow-book i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.content .element-borrow-book p {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 4px;
+}
+
+.content .element-borrow-book input {
+    height: 50px;
+    width: 30%;
+    margin: 4px 50px 4px 0px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.content .element-borrow-book button {
+    width: 30%;
+    height: 10%;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-right: 50px;
+}
+
+.content .element-borrow-book button:hover {
+    border: 3px solid #1dbfaf;
+    cursor: pointer;
+}
+
+.content .element-borrow-book .borrow-book-name {
+    display: flex;
+    width: 70%;
+    margin: 12px;
+}
+
+.content .element-borrow-book .borrow-book-name h1 {
+    font-size: 30px;
+    color: #fff;
+    flex: 1;
+}
+
+.content .element-borrow-book .borrow-book-name h2 {
+    font-size: 30px;
+    color: #fff;
+    flex: 3;
+    font-weight: 600;
+}
+
+
